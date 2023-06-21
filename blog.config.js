@@ -188,6 +188,13 @@ const BLOG = {
       url: 'https://music.163.com/song/media/outer/url?id=167654.mp3',
       cover:
           'http://p1.music.126.net/IqMLsL5GfpK1f0ioiBdrPg==/69269232550733.jpg?param=130y130'
+    },
+    {
+      name: '在水一方',
+      artist: '李健',
+      url: 'https://music.163.com/song/media/outer/url?id=31877400.mp3',
+      cover:
+          'http://p2.music.126.net/KMv93rm8wwZOs9BdYgDqxw==/109951167596334782.jpg?param=130y130'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
