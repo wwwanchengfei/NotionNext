@@ -176,7 +176,7 @@ const BLOG = {
           'http://p2.music.126.net/TmOHxaGnFNlwNX8aPz66oA==/109951168638913915.jpg?param=130y130'
     },
     {
-      name: '醉清风',
+      name: '醉清风(2005)',
       artist: '弦子',
       url: 'https://music.163.com/song/media/outer/url?id=29535043.mp3',
       cover:
