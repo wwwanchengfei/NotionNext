@@ -1121,11 +1121,10 @@ code[class*='language-'] {
 .notion-table-of-contents {
   width: 100%;
   margin: 4px 0;
-  @apply bg-gray-50 dark:bg-black p-2
+  @apply bg-gray-50 dark:bg-gray-900 p-2
 }
 
 .notion-table-of-contents-item {
-  /* color: inherit; */
   text-decoration: none;
   user-select: none;
   transition: background 20ms ease-in 0s;
@@ -1141,6 +1140,7 @@ code[class*='language-'] {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  @apply dark:text-white
 
 }
 
@@ -1294,6 +1294,8 @@ code[class*='language-'] {
   transition: background 20ms ease-in 0s;
   color: inherit;
   text-decoration: none;
+  
+  @apply dark:stroke-slate-200
 }
 
 .notion-file-link:hover {
@@ -1328,10 +1330,12 @@ code[class*='language-'] {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: var(--fg-color-3);
+  /* color: var(--fg-color-3); */
   font-size: 12px;
   line-height: 16px;
   margin-left: 6px;
+
+  @apply dark:text-gray-400 !important
 }
 
 .notion-audio {
@@ -2014,11 +2018,4 @@ code.language-mermaid {
 
 .notion-equation-inline .katex-display {
   margin: 0 0 !important;
-}
-
-.two-line-clamp {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
 }
