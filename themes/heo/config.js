@@ -15,6 +15,7 @@ const CONFIG = {
   HERO_TITLE_3: 'WANCHENGFEI.COM',
   HERO_TITLE_4: '生活加速度',
   HERO_TITLE_5: '轻松生活',
+  HERO_TITLE_LINK: 'https://www.wanchengfei.com',
   // 英雄区显示三个置顶分类
   HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' },
   HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' },
