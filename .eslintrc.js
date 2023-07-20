@@ -29,9 +29,7 @@ module.exports = {
     'react/no-unknown-property': 'off', // <style jsx>
     'react/prop-types': 'off',
     'space-before-function-paren': 0,
-    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-    "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    'react-hooks/rules-of-hooks': 'error' // Checks rules of Hooks
   },
   globals: {
     React: true
