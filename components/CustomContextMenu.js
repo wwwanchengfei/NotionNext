@@ -80,7 +80,7 @@ export default function CustomContextMenu(props) {
   function handeChangeTheme() {
     const randomTheme = THEMES[Math.floor(Math.random() * THEMES.length)] // 从THEMES数组中 随机取一个主题
     const query = router.query
-    query.theme = 4
+    query.theme = randomTheme
     router.push({ pathname: router.pathname, query })
   }
 
@@ -147,10 +147,10 @@ export default function CustomContextMenu(props) {
                         <div className='whitespace-nowrap'> {isDarkMode ? locale.MENU.LIGHT_MODE : locale.MENU.DARK_MODE}</div>
                     </div>
                     {/* 主题切换 */}
-                    <div onClick={handeChangeTheme} title={locale.MENU.THEME_SWITCH} className='w-full px-2 h-10 flex justify-start items-center flex-nowrap cursor-pointer hover:bg-blue-600 hover:text-white rounded-lg duration-200 transition-all'>
+                    {/* <div onClick={handeChangeTheme} title={locale.MENU.THEME_SWITCH} className='w-full px-2 h-10 flex justify-start items-center flex-nowrap cursor-pointer hover:bg-blue-600 hover:text-white rounded-lg duration-200 transition-all'>
                         <i className="fa-solid fa-palette mr-2" />
                         <div className='whitespace-nowrap'>{locale.MENU.THEME_SWITCH}</div>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
