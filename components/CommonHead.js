@@ -55,22 +55,6 @@ const CommonHead = ({ meta, children }) => {
               }
             })}
 
-<<<<<<< HEAD
-      {JSON.parse(BLOG.ANALYTICS_BUSUANZI_ENABLE) && <meta name="referrer" content="never" />}
-      {meta?.type === 'Post' && (
-        <>
-          <meta
-            property="article:published_time"
-            content={meta.publishTime}
-          />
-          <meta property="article:author" content={BLOG.AUTHOR} />
-          <meta property="article:section" content={category} />
-          <meta property="article:publisher" content={BLOG.FACEBOOK_PAGE} />
-        </>
-      )}
-      {children}
-    </Head>
-=======
             {BLOG.COMMENT_WEBMENTION.ENABLE && (
                 <>
                     <link rel="webmention" href={`https://webmention.io/${BLOG.COMMENT_WEBMENTION.HOSTNAME}/webmention`} />
@@ -96,7 +80,6 @@ const CommonHead = ({ meta, children }) => {
             )}
             {children}
         </Head>
->>>>>>> main
   )
 }
 
