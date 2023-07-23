@@ -13,11 +13,11 @@ class MyDocument extends Document {
     return (
             <Html lang={BLOG.LANG}>
                 <Head>
-                    <link rel='icon' href='/favicon.ico' />
+                    <link rel='icon' href= {`${BLOG.BLOG_FAVICON}`} />
                     <CommonScript />
                 </Head>
 
-                <body className={`${BLOG.FONT_STYLE} font-light`}>
+                <body className={`${BLOG.FONT_STYLE} font-light scroll-smooth`}>
                     <Main />
                     <NextScript />
                 </body>
