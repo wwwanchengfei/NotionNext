@@ -108,8 +108,8 @@ module.exports = withBundleAnalyzer({
     NODE_ENV_API: process.env.NODE_ENV_API || 'prod',
     THEMES: themes
   },
-  
+
   eslint: {
     ignoreDuringBuilds: true,
-},
+  },
 })
