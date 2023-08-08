@@ -32,7 +32,7 @@ module.exports = {
     'space-before-function-paren': 0,
     'react-hooks/rules-of-hooks': 'error',// Checks rules of Hooks
     'react/no-unescaped-entities': 'off',
-    '@next/next/no-page-custom-font': 'off' 
+    '@next/next/no-page-custom-font': 'off'
   },
   globals: {
     React: true
