@@ -8,7 +8,8 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@next/next/recommended',
     'standard',
-    'next'
+    'next',
+    'next/core-web-vitals'
   ],
   parserOptions: {
     ecmaFeatures: {
