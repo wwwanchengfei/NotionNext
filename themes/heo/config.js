@@ -10,11 +10,11 @@ const CONFIG = {
   ],
 
   // 英雄区(首页顶部大卡)
-  HERO_TITLE_1: '分享编程',
+  HERO_TITLE_1: '分享生活',
   HERO_TITLE_2: '与思维认知',
   HERO_TITLE_3: 'WANCHENGFEI.COM',
-  HERO_TITLE_4: '生活加速度',
-  HERO_TITLE_5: '轻松生活',
+  HERO_TITLE_4: '少愤慨，多谦卑',
+  HERO_TITLE_5: '慎言、慎行、慎独',
   HERO_TITLE_LINK: 'https://www.wanchengfei.com',
   // 英雄区显示三个置顶分类
   HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' },
