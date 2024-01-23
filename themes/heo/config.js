@@ -9,6 +9,11 @@ const CONFIG = {
     { title: '分享简单生活', url: 'https://www.wanchengfei.com' }
   ],
 
+  // 英雄区左右侧组件颠倒位置
+  HEO_HERO_REVERSE: false,
+  // 博客主体区左右侧组件颠倒位置
+  HEO_HERO_BODY_REVERSE: false,
+
   // 英雄区(首页顶部大卡)
   HEO_HERO_TITLE_1: '分享生活',
   HEO_HERO_TITLE_2: '与思维认知',
