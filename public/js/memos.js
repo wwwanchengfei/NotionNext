@@ -51,8 +51,8 @@ var memo = {
     limit: '10',
     creatorId: '1',
     domId: '#memos',
-    username: 'wwwanchengfei',
-    name: ' 回到生活中去'
+    username: '回到生活中去',
+    name: ' wwwanchengfei'
 }
 if (typeof (memos) !== "undefined") {
     for (var key in memos) {
