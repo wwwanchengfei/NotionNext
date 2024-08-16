@@ -5,7 +5,7 @@
  *  1. 开启方式 在blog.config.js 将主题配置为 `HEO`
  *  2. 更多说明参考此[文档](https://docs.tangly1024.com/article/notionnext-heo)
  */
-
+import BlogMemos from './components/BlogMemos'
 import Comment from '@/components/Comment'
 import { AdSlot } from '@/components/GoogleAdsense'
 import { HashTag } from '@/components/HeroIcons'
@@ -234,6 +234,37 @@ const LayoutArchive = props => {
       </div>
     </div>
   )
+}
+
+/**
+ * 说说
+ * @param {*} props
+ * @returns
+ */
+const LayoutMemos = (props) => {
+  const memoPageInfo = {
+    // 因为引入了评论互动，所以需要一个ID来对应加载页面评论，这里使用Notion这个菜单的pageID
+    id: "22e8782374344d4c8251632a899a2b5b",
+    type: "Memos",
+    title: "我的说说",
+  };
+  return  (
+  <div className="w-full lg:hover:shadow rounded-md lg:rounded-md lg:px-2 lg:py-4 article">
+    <div id="article-wrapper" className="overflow-x-auto flex-grow mx-auto md:w-full px-3 font-serif">  
+      <article itemScope itemType="https://schema.org/Movie" className="subpixel-antialiased overflow-y-hidden overflow-x-hidden" >
+        {/* Notion文章主体 */}
+        <section className='justify-center mx-auto max-w-2xl lg:max-w-full'>
+            <BlogMemos {...props}/>
+        </section>
+      </article>
+			{/* 移除了分享模块，如果需要可以保留，将 LayoutSlug的对应部分拷贝过来 */}
+      <div className='pt-4 border-dashed'></div>
+      {/* 评论互动 */}
+      <div className="duration-200 overflow-x-auto px-3">
+        <Comment frontMatter={memoPageInfo} />
+      </div>
+    </div>
+  </div>)
 }
 
 /**
@@ -496,5 +527,6 @@ export {
   LayoutSearch,
   LayoutSlug,
   LayoutTagIndex,
+  LayoutMemos,
   CONFIG as THEME_CONFIG
 }
