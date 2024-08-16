@@ -245,7 +245,7 @@ const LayoutArchive = props => {
 const LayoutMemos = (props) => {
   const memoPageInfo = {
     // 因为引入了评论互动，所以需要一个ID来对应加载页面评论，这里使用Notion这个菜单的pageID
-    id: "9ecc78643def47bcvabeg5fn26304679",
+    id: "22e8782374344d4c8251632a899a2b5b",
     type: "Memos",
     title: "我的说说",
   };
