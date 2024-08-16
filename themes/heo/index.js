@@ -259,10 +259,11 @@ const LayoutMemos = (props) => {
       </article>
 			{/* 移除了分享模块，如果需要可以保留，将 LayoutSlug的对应部分拷贝过来 */}
       <div className='pt-4 border-dashed'></div>
-      {/* 评论互动 */}
+      {/* 评论互动 
       <div className="duration-200 overflow-x-auto px-3">
         <Comment frontMatter={memoPageInfo} />
       </div>
+      */}
     </div>
   </div>)
 }
