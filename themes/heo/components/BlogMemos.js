@@ -42,7 +42,7 @@ const BlogMemos = () => {
     return (
         <section id="main" className="container">
 						{/* 可以按需修改这里显示的标题和统计文本 */}
-            <h2>岁月轻歌</h2>
+            <h2>回到生活中去</h2>
             <div className="total">一共 <span id="total">0</span> 条随想 🎉</div>
             <blockquote id="tag-filter" className="filter">
                 <div id="tags"></div>
