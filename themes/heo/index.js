@@ -249,9 +249,9 @@ const LayoutMemos = (props) => {
     title: "我的说说",
   };
   return  (
-  <div className="w-full lg:hover:shadow rounded-md lg:rounded-md lg:px-2 lg:py-4 article">
-    <div id="article-wrapper" className="overflow-x-auto flex-grow mx-auto md:w-full px-3 font-serif">  
-      <article itemScope itemType="https://schema.org/Movie" className="subpixel-antialiased overflow-y-hidden overflow-x-hidden" >
+    <div className={`article h-full w-full ${fullWidth ? '' : 'xl:max-w-5xl'} ${hasCode ? 'xl:w-[73.15vw]' : ''} lg:hover:shadow lg:border rounded-2xl lg:px-2 lg:py-4 bg-white dark:bg-[#18171d] dark:border-gray-600`}>
+    <div id='article-wrapper' className='mx-auto md:w-full md:px-5'> 
+      <article itemScope itemType="https://schema.org/Movie" className="wow fadeInUp p-5 justify-center mx-auto" >
         {/* Notion文章主体 */}
         <section className='justify-center mx-auto max-w-2xl lg:max-w-full'>
             <BlogMemos {...props}/>
