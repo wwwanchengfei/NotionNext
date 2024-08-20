@@ -263,9 +263,13 @@ const LayoutMemos = (props) => {
     <div id='article-wrapper' className='mx-auto md:w-full md:px-5'> 
       <article itemScope itemType="https://schema.org/Movie">
         {/* Notion文章主体 */}
-        <section className='fadeInUp p-5 justify-center mx-auto'>
-            <BlogMemos {...props}/>
-        </section>
+        <section
+            className='wow fadeInUp p-5 justify-center mx-auto'
+            data-wow-delay='.2s'>
+            <WWAds orientation='horizontal' className='w-full' />
+               <BlogMemos {...props}/>
+            <WWAds orientation='horizontal' className='w-full' />
+         </section>
       </article>
 			{/* 移除了分享模块，如果需要可以保留，将 LayoutSlug的对应部分拷贝过来 */}
       <div className='pt-4 border-dashed'></div>
