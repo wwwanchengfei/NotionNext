@@ -77,7 +77,7 @@ var btnRemove = 0
 var memoDom = document.querySelector(memo.domId);
 var load = '<button class="load-btn button-load"></button>'
 if (memoDom) {
-    // memoDom.insertAdjacentHTML('afterend', load);
+    memoDom.insertAdjacentHTML('afterend', load);
     getFirstList() // 首次加载数据
     // 添加 button 事件监听器
     btnRemove = 0;
