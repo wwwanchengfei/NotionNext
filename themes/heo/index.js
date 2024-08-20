@@ -248,6 +248,11 @@ const LayoutMemos = (props) => {
     type: "Memos",
     title: "我的说说",
   };
+
+  const { fullWidth } = useGlobal();
+
+  const [hasCode] = useState(false);
+
   return  (
     <div className={`article h-full w-full ${fullWidth ? '' : 'xl:max-w-5xl'} ${hasCode ? 'xl:w-[73.15vw]' : ''} lg:hover:shadow lg:border rounded-2xl lg:px-2 lg:py-4 bg-white dark:bg-[#18171d] dark:border-gray-600`}>
     <div id='article-wrapper' className='mx-auto md:w-full md:px-5'> 
