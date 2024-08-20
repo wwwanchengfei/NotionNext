@@ -250,8 +250,13 @@ const LayoutMemos = (props) => {
   };
 
   const { fullWidth } = useGlobal();
+  
+  const [hasCode, setHasCode] = useState(false);
 
-  const [hasCode] = useState(false);
+  useEffect(() => {
+    const hasCode = document.querySelectorAll('[class^="language-"]').length > 0
+    setHasCode(hasCode)
+  }, [])
 
   return  (
     <div className={`article h-full w-full ${fullWidth ? '' : 'xl:max-w-5xl'} ${hasCode ? 'xl:w-[73.15vw]' : ''} lg:hover:shadow lg:border rounded-2xl lg:px-2 lg:py-4 bg-white dark:bg-[#18171d] dark:border-gray-600`}>
