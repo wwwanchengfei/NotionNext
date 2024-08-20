@@ -251,9 +251,9 @@ const LayoutMemos = (props) => {
   return  (
     <div className={`article h-full w-full ${fullWidth ? '' : 'xl:max-w-5xl'} ${hasCode ? 'xl:w-[73.15vw]' : ''} lg:hover:shadow lg:border rounded-2xl lg:px-2 lg:py-4 bg-white dark:bg-[#18171d] dark:border-gray-600`}>
     <div id='article-wrapper' className='mx-auto md:w-full md:px-5'> 
-      <article itemScope itemType="https://schema.org/Movie" className="wow fadeInUp p-5 justify-center mx-auto" >
+      <article itemScope itemType="https://schema.org/Movie">
         {/* Notion文章主体 */}
-        <section className='justify-center mx-auto max-w-2xl lg:max-w-full'>
+        <section className='fadeInUp p-5 justify-center mx-auto'>
             <BlogMemos {...props}/>
         </section>
       </article>
