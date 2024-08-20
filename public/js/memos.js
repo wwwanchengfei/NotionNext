@@ -75,15 +75,15 @@ var page = 1,
 var tag='';
 var btnRemove = 0
 var memoDom = document.querySelector(memo.domId);
-var load = '<button class="load-btn button-load">努力加载中……</button>'
+var load = '<button class="load-btn button-load"></button>'
 if (memoDom) {
-    memoDom.insertAdjacentHTML('afterend', load);
+    // memoDom.insertAdjacentHTML('afterend', load);
     getFirstList() // 首次加载数据
     // 添加 button 事件监听器
     btnRemove = 0;
     var btn = document.querySelector("button.button-load");
     btn.addEventListener("click", function () {
-        btn.textContent = '努力加载中……';
+        btn.textContent = '';
         updateHTMl(nextDom)
         if (nextLength < limit) { // 返回数据条数小于限制条数，隐藏
             document.querySelector("button.button-load").remove()
@@ -142,7 +142,7 @@ document.addEventListener('click', function (event) {
             // 添加 button 事件监听器
             var btn = document.querySelector("button.button-load");
             btn.addEventListener("click", function () {
-                btn.textContent = '努力加载中……';
+                btn.textContent = '';
                 updateHTMl(nextDom)
                 if (nextLength < limit) { // 返回数据条数小于限制条数，隐藏
                     document.querySelector("button.button-load").remove()
