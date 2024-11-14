@@ -233,4 +233,6 @@ eslint: {
 
 }
 
-module.exports = withBundleAnalyzer(nextConfig)
+module.exports = process.env.ANALYZE
+  ? withBundleAnalyzer(nextConfig)
+  : nextConfig
