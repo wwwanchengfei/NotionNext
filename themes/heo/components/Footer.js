@@ -1,14 +1,21 @@
+/*
+ * @Author: wan.chengfei wan.chengfei@rongzer.com
+ * @Date: 2024-11-15 15:52:58
+ * @LastEditors: wan.chengfei wan.chengfei@rongzer.com
+ * @LastEditTime: 2024-11-15 15:54:07
+ * @FilePath: /NotionNext/themes/heo/components/Footer.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import { BeiAnGongAn } from '@/components/BeiAnGongAn'
+import CopyRightDate from '@/components/CopyRightDate'
+import PoweredBy from '@/components/PoweredBy'
 import { siteConfig } from '@/lib/config'
 import SocialButton from './SocialButton'
-
-const Footer = ({ title }) => {
-  const d = new Date()
-  const currentYear = d.getFullYear()
-  const since = siteConfig('SINCE')
-  const copyrightDate =
-    parseInt(since) < currentYear ? since + '-' + currentYear : currentYear
-
+/**
+ * 页脚
+ * @returns
+ */
+const Footer = () => {
   return (
     <footer className='relative flex-shrink-0 bg-white dark:bg-[#1a191d] justify-center text-center m-auto w-full leading-6  text-gray-600 dark:text-gray-100 text-sm'>
       {/* 颜色过度区 */}
@@ -29,14 +36,8 @@ const Footer = ({ title }) => {
         id='footer-bottom'
         className='w-full h-20 flex flex-col p-3 lg:flex-row justify-between px-6 items-center bg-[#f1f3f7] dark:bg-[#21232A] border-t dark:border-t-[#3D3D3F]'>
         <div id='footer-bottom-left'>
-          <i className='fas fa-copyright' />{' '}
-          {`${copyrightDate}`} <i className='mx-1 animate-pulse fas fa-heart' />{' '}
-          <a
-            href={siteConfig('LINK')}
-            className='underline font-bold dark:text-gray-300 '>
-            {siteConfig('AUTHOR')}
-          </a>
-          .
+          <PoweredBy />
+          <CopyRightDate />
         </div>
 
         <div id='footer-bottom-right'>
