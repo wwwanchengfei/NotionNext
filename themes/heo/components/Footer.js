@@ -2,7 +2,7 @@
  * @Author: wan.chengfei wan.chengfei@rongzer.com
  * @Date: 2024-11-15 15:52:58
  * @LastEditors: wan.chengfei wan.chengfei@rongzer.com
- * @LastEditTime: 2024-11-15 15:54:07
+ * @LastEditTime: 2024-11-15 15:58:48
  * @FilePath: /NotionNext/themes/heo/components/Footer.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -36,7 +36,7 @@ const Footer = () => {
         id='footer-bottom'
         className='w-full h-20 flex flex-col p-3 lg:flex-row justify-between px-6 items-center bg-[#f1f3f7] dark:bg-[#21232A] border-t dark:border-t-[#3D3D3F]'>
         <div id='footer-bottom-left'>
-          <PoweredBy />
+          {/* <PoweredBy /> */}
           <CopyRightDate />
         </div>
 
