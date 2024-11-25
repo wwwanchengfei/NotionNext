@@ -6,7 +6,9 @@ import React from 'react'
 import BLOG from '@/blog.config'
 
 const MemosIndex = props => {
-  const Layout = getLayoutByTheme({ theme: siteConfig('THEME'), router: useRouter() })
+  const Layout = getLayoutByTheme({ 
+    theme: siteConfig('THEME', BLOG.THEME, props.NOTION_CONFIG)
+  })
 
   return <Layout {...props} />
 }
