@@ -1,16 +1,14 @@
-import { useRouter } from 'next/router'
-import { getLayoutByTheme } from '@/themes/theme'
 import { siteConfig } from '@/lib/config'
 import { getGlobalData } from '@/lib/db/getSiteData'
 import React from 'react'
 import BLOG from '@/blog.config'
+import { DynamicLayout } from '@/themes/theme'
 
 const MemosIndex = props => {
   const Layout = getLayoutByTheme({ 
     theme: siteConfig('THEME', BLOG.THEME, props.NOTION_CONFIG)
   })
-
-  return <Layout {...props} />
+  return <DynamicLayout theme={theme} layoutName='LayoutPostList' {...props} />
 }
 
 export async function getStaticProps() {
