@@ -9,6 +9,7 @@ const MemosIndex = props => {
   return <DynamicLayout theme={theme} layoutName='LayoutMemos' {...props} />
 }
 
+
 export async function getStaticProps() {
   const from = 'tag-index-props'
   const props = await getGlobalData({ from })
