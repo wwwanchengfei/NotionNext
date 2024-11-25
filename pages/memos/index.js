@@ -1,14 +1,12 @@
-import { useRouter } from 'next/router'
-import { getLayoutByTheme } from '@/themes/theme'
 import { siteConfig } from '@/lib/config'
 import { getGlobalData } from '@/lib/notion/getNotionData'  //若为NotionNext 4.3.2+版本，此处应为 @/lib/db/getSiteData
 import React from 'react'
 import BLOG from '@/blog.config'
+import { DynamicLayout } from '@/themes/theme'
 
 const MemosIndex = props => {
-  const Layout = getLayoutByTheme({ theme: siteConfig('THEME'), router: useRouter() })
-
-  return <Layout {...props} />
+  const theme = siteConfig('THEME', BLOG.THEME, props.NOTION_CONFIG)
+  return <DynamicLayout theme={theme} layoutName='LayoutMemosIndex' {...props} />
 }
 
 export async function getStaticProps() {
