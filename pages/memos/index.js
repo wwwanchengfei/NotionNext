@@ -5,9 +5,7 @@ import BLOG from '@/blog.config'
 import { DynamicLayout } from '@/themes/theme'
 
 const MemosIndex = props => {
-  const DynamicLayout = getLayoutByTheme({ 
-    theme: siteConfig('THEME', BLOG.THEME, props.NOTION_CONFIG)
-  })
+  const theme = siteConfig('THEME', BLOG.THEME, props.NOTION_CONFIG)
   return <DynamicLayout theme={theme} layoutName='LayoutPostList' {...props} />
 }
 
