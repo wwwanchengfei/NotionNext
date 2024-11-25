@@ -6,7 +6,7 @@ import { DynamicLayout } from '@/themes/theme'
 
 const MemosIndex = props => {
   const theme = siteConfig('THEME', BLOG.THEME, props.NOTION_CONFIG)
-  return <DynamicLayout theme={theme} layoutName='LayoutMemosIndex' {...props} />
+  return <DynamicLayout theme={theme} layoutName='LayoutMemos' {...props} />
 }
 
 export async function getStaticProps() {
