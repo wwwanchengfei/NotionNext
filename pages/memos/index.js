@@ -1,5 +1,5 @@
 import { siteConfig } from '@/lib/config'
-import { getGlobalData } from '@/lib/notion/getNotionData'  //若为NotionNext 4.3.2+版本，此处应为 @/lib/db/getSiteData
+import { getGlobalData} from '@/lib/db/getSiteData'
 import React from 'react'
 import BLOG from '@/blog.config'
 import { DynamicLayout } from '@/themes/theme'
