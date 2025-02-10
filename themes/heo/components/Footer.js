@@ -41,11 +41,6 @@ const Footer = () => {
           <PoweredBy />
           <div className='flex gap-x-1'>
             <CopyRightDate />
-            <a
-              href={'/about'}
-              className='underline font-semibold dark:text-gray-300 '>
-              {siteConfig('AUTHOR')}
-            </a>
             {BIO && <span className='mx-1'> | {BIO}</span>}
           </div>
         </div>
